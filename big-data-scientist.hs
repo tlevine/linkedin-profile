@@ -1,4 +1,4 @@
-import qualified Data.Set as S
+import System.Random
 
 management_nouns = [
     "insight",
@@ -84,7 +84,23 @@ data_adjectives = [
     "predictive",
     "semantic"]
 
-buzzwords = S.fromList $ concat [management_verbs, management_nouns, management_adjectives, programming_adjectives, programming_nouns, data_adjectives, data_nouns]
+buzzwords = concat [management_verbs, management_nouns, management_adjectives, programming_adjectives, programming_nouns, data_adjectives, data_nouns]
+
+random_buzzword :: RandomGen g => [String] -> g -> (String, [String], g)
+random_buzzword buzzwords seed = (buzzword, leftovers, g)
+  where
+    (number, g) = next seed
+    index = number `mod` (length buzzwords)
+    buzzword = buzzwords !! index
+    (a,b) = splitAt index buzzwords
+    leftovers = a ++ (tail b)
+
+profile :: RandomGen g => [String] -> g -> [String]
+profile [] seed = []
+profile buzzwords seed = current : (profile next_buzzwords next_seed)
+  where
+    (current, next_buzzwords, next_seed) = random_buzzword buzzwords seed
 
 main = do
-  putStrLn $ show $ buzzwords
+  seed <- newStdGen 
+  putStrLn $ show $ profile buzzwords seed
