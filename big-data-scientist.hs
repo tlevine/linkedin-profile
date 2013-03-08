@@ -1,3 +1,5 @@
+import qualified Data.List as S
+
 management_nouns = [
     'insight',
     'action',
@@ -16,16 +18,6 @@ management_nouns = [
     'acceleration'
 ]
 
-programming_nouns = [
-    'user interface (UI)',
-    'user experience (UX)',
-    'relational state transfer (ReST)',
-    'SOAP',
-    'backend',
-    'frontend',
-]
-
-
 management_verbs = [
     'kickstart',
     'accelerate',
@@ -35,6 +27,14 @@ management_verbs = [
 management_adjectives = [
 ]
 
+programming_nouns = [
+    'user interface (UI)',
+    'user experience (UX)',
+    'relational state transfer (ReST)',
+    'SOAP',
+    'backend',
+    'frontend',
+]
 
 programming_adjectives = [
     'extensible',
@@ -90,3 +90,8 @@ data_adjectives = [
     'predictive',
     'semantic',
 ]
+
+words = S.fromList $ concat [management_verbs, management_nouns, management_adjectives, programming_adjectives, programming_nouns, data_adjectives, data_nouns]
+
+main = do
+  putStrLn $ show $ words
