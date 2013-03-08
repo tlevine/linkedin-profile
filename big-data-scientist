@@ -1,0 +1,48 @@
+management_nouns = [
+    'insight',
+    'action',
+    'return on investment (ROI)',
+    'key performance indicator (KPI)',
+    'decision',
+    'app',
+    'solution',
+    'community',
+    'customer',
+    'discovery',
+    'proprietary',
+    'opensource',
+    'business intelligence (BI)',
+    'lead generation'
+]
+
+data_nouns = [
+    'd3',
+    'hypothesis',
+    'influence',
+    'cluster',
+    'cloud',
+    'geo',
+    'map',
+    'GIS',
+    'Bayes',
+    'A/B test',
+    'validation',
+    'database',
+    'geofence',
+]
+
+programming_nouns = [
+    'user interface (UI)',
+    'user experience (UX)',
+]
+
+management_adjectives = [
+]
+programming_adjectives = [
+    'extensible',
+    'scalable',
+    'responsive',
+]
+data_adjectives = [
+    'realtime',
+    'qualitative',
