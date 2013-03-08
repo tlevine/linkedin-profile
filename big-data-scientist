@@ -12,7 +12,34 @@ management_nouns = [
     'proprietary',
     'opensource',
     'business intelligence (BI)',
-    'lead generation'
+    'lead generation',
+    'acceleration'
+]
+
+programming_nouns = [
+    'user interface (UI)',
+    'user experience (UX)',
+    'relational state transfer (ReST)',
+    'SOAP',
+    'backend',
+    'frontend',
+]
+
+
+management_verbs = [
+    'kickstart',
+    'accelerate',
+    'grow',
+]
+
+management_adjectives = [
+]
+
+
+programming_adjectives = [
+    'extensible',
+    'scalable',
+    'responsive',
 ]
 
 data_nouns = [
@@ -29,20 +56,37 @@ data_nouns = [
     'validation',
     'database',
     'geofence',
+    'text-mining',
+    'artificial intelligence',
+    'machine-leaning',
+    'data-mining',
+    'integrity',
+    'validation',
+    'natural language processing',
+    'recommendation',
+    'infographic',
+    'information graphic',
+    'dataviz',
+    'data visualization',
+    'discovery',
+    'social network',
+    'social media',
+    'graph',
+    'NoSQL',
+    'RDBMS',
+    'integration',
+    'interactive',
 ]
 
-programming_nouns = [
-    'user interface (UI)',
-    'user experience (UX)',
-]
-
-management_adjectives = [
-]
-programming_adjectives = [
-    'extensible',
-    'scalable',
-    'responsive',
-]
 data_adjectives = [
     'realtime',
     'qualitative',
+    'quantitative',
+    'structured',
+    'unstructured',
+    'statistical',
+    'supervised',
+    'unsupervised',
+    'predictive',
+    'semantic',
+]
