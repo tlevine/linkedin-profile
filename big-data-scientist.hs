@@ -1,6 +1,6 @@
 import System.Random
 
-management_nouns = [
+fascia = [
     "insight",
     "action",
     "return on investment (ROI)",
@@ -15,32 +15,24 @@ management_nouns = [
     "opensource",
     "business intelligence (BI)",
     "lead generation",
-    "acceleration"]
-
-management_verbs = [
+    "acceleration",
     "kickstart",
     "accelerate",
-    "grow"]
+    "grow",
+    "hypothesis",
+    "influence"]
 
-management_adjectives =[]
-
-programming_nouns = [
+meat = [
     "user interface (UI)",
     "user experience (UX)",
     "relational state transfer (ReST)",
     "SOAP",
     "backend",
-    "frontend"]
-
-programming_adjectives = [
+    "frontend",
     "extensible",
     "scalable",
-    "responsive"]
-
-data_nouns = [
+    "responsive",
     "d3",
-    "hypothesis",
-    "influence",
     "cluster",
     "cloud",
     "geo",
@@ -70,9 +62,7 @@ data_nouns = [
     "NoSQL",
     "RDBMS",
     "integration",
-    "interactive"]
-
-data_adjectives = [
+    "interactive",
     "realtime",
     "qualitative",
     "quantitative",
@@ -84,10 +74,8 @@ data_adjectives = [
     "predictive",
     "semantic"]
 
-buzzwords = concat [management_verbs, management_nouns, management_adjectives, programming_adjectives, programming_nouns, data_adjectives, data_nouns]
-
-random_buzzword :: RandomGen g => [String] -> g -> (String, [String], g)
-random_buzzword buzzwords seed = (buzzword, leftovers, g)
+sample :: RandomGen g => [String] -> g -> (String, [String], g)
+sample buzzwords seed = (buzzword, leftovers, g)
   where
     (number, g) = next seed
     index = number `mod` (length buzzwords)
@@ -95,12 +83,14 @@ random_buzzword buzzwords seed = (buzzword, leftovers, g)
     (a,b) = splitAt index buzzwords
     leftovers = a ++ (tail b)
 
-profile :: RandomGen g => [String] -> g -> [String]
-profile [] seed = []
-profile buzzwords seed = current : (profile next_buzzwords next_seed)
+sortRandom :: RandomGen g => [String] -> g -> [String]
+sortRandom [] seed = []
+sortRandom buzzwords seed = current : (sortRandom next_buzzwords next_seed)
   where
-    (current, next_buzzwords, next_seed) = random_buzzword buzzwords seed
+    (current, next_buzzwords, next_seed) = sample buzzwords seed
 
 main = do
-  seed <- newStdGen 
-  putStrLn $ show $ profile buzzwords seed
+  seedA <- newStdGen 
+  seedB <- newStdGen 
+  putStrLn $ show $ sortRandom fascia seedA
+  putStrLn $ show $ sortRandom meat seedA
