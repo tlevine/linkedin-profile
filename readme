@@ -1,1 +1,16 @@
 I want to see what happens if I create a meaning-void LinkedIn profile of buzzwords.
+
+Compile and run `big-data-scientist.hs`. It will give a list of meat words and
+fascia words. These lists will be in a random order. Use these lists to compose
+a meaningless bulleted description of your past experience.
+
+1. Start the first bullet with a fascia word. You will follow it by a meat
+    word, and you should adjust the parts of speech to make them fit.
+2. Continue stringing meat words together, adjusting their parts of speech as
+    is convenient.
+3. If adjusting the parts of speech doesn't help, add a fascia word in between
+    two meat words.
+4. If adding the fascia word doesn't help connect adjacent meat words, end the
+    current bullet at the first of the two meat words, and use the fascia word
+    and the second of the meat words to start the next bullet.
+5. Repeat steps 2 to 4 until you have four bullets.
