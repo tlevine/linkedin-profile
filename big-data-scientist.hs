@@ -1,4 +1,5 @@
 import System.Random
+import Data.List (intersperse)
 
 fascia = [
     "insight",
@@ -92,5 +93,10 @@ sortRandom buzzwords seed = current : (sortRandom next_buzzwords next_seed)
 main = do
   seedA <- newStdGen 
   seedB <- newStdGen 
-  putStrLn $ show $ sortRandom fascia seedA
-  putStrLn $ show $ sortRandom meat seedA
+  putStrLn "Fascia"
+  putStrLn "--------"
+  putStrLn $ concat $ intersperse "\n" $ sortRandom fascia seedA
+  putStrLn ""
+  putStrLn "Meat"
+  putStrLn "--------"
+  putStrLn $ concat $ intersperse "\n" $ sortRandom meat seedB
