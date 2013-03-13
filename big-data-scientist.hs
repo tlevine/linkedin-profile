@@ -3,7 +3,6 @@ import Data.List (intersperse)
 
 heads = [
     "acceleration",
-    "kickstart",
     "accelerate",
     "grow",
     "optimize",
@@ -54,7 +53,6 @@ meat = [
     "database",
     "geofence",
     "text-mining",
-    "artificial intelligence",
     "machine-leaning",
     "data-mining",
     "integrity",
