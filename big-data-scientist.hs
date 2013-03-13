@@ -1,7 +1,19 @@
 import System.Random
 import Data.List (intersperse)
 
-fascia = [
+heads = [
+    "acceleration",
+    "kickstart",
+    "accelerate",
+    "grow",
+    "optimize",
+    "establish",
+    "implement",
+    "build",
+    "develop"]
+
+meat = [
+    -- Businessy
     "insight",
     "action",
     "return on investment (ROI)",
@@ -13,24 +25,15 @@ fascia = [
     "proprietary",
     "opensource",
     "lead generation",
-    "acceleration",
-    "kickstart",
-    "accelerate",
-    "grow",
-    "optimize",
-    "establish",
     "synergy",
     "reveal",
     "business",
     "marketing",
     "predictive",
     "validation",
-    "implement",
-    "build",
-    "develop",
-    "influence"]
+    "influence",
 
-meat = [
+    -- Computery
     "key performance indicator (KPI)",
     "decision",
     "hypothesis",
@@ -95,9 +98,9 @@ sortRandom buzzwords seed = current : (sortRandom next_buzzwords next_seed)
 main = do
   seedA <- newStdGen 
   seedB <- newStdGen 
-  putStrLn "Fascia"
+  putStrLn "Heads"
   putStrLn "--------"
-  putStrLn $ concat $ intersperse "\n" $ sortRandom fascia seedA
+  putStrLn $ concat $ intersperse "\n" $ sortRandom heads seedA
   putStrLn ""
   putStrLn "Meat"
   putStrLn "--------"
