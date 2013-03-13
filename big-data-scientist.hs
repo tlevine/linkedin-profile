@@ -11,20 +11,9 @@ heads = [
     "build",
     "develop"]
 
-meat = [
-    -- Businessy
-    "insight",
-    "action",
-    "return on investment (ROI)",
-    "app",
-    "solution",
-    "community",
-    "customer",
-    "discovery",
+searches = [
     "proprietary",
     "opensource",
-    "lead generation",
-    "synergy",
     "reveal",
     "business",
     "marketing",
@@ -32,13 +21,9 @@ meat = [
     "validation",
     "influence",
 
-    -- Computery
-    "key performance indicator (KPI)",
     "decision",
-    "hypothesis",
     "user interface (UI)",
     "user experience (UX)",
-    "relational state transfer (ReST)",
     "backend",
     "frontend",
     "extensible",
@@ -48,12 +33,10 @@ meat = [
     "cloud",
     "geo",
     "map",
-    "Bayes",
-    "A/B test",
     "database",
     "geofence",
     "text-mining",
-    "machine-leaning",
+    "machine learning",
     "data-mining",
     "integrity",
     "natural language processing",
@@ -62,10 +45,56 @@ meat = [
     "data visualization (dataviz)",
     "social network",
     "social media",
+
+    -- Bullshit tools
     "graph",
     "NoSQL",
     "RDBMS",
-    "business intelligence (BI)",
+    "MySQL",
+    "Java",
+    "MapReduce",
+    "Hadoop",
+    "Mongo",
+    "C++",
+    "Rails",
+    "Python",
+    "Javascript",
+    "CSS",
+    "HTML",
+    "XML",
+    "Node.js",
+    "Backbone",
+    "Scala",
+    "Clojure",
+    "jQuery",
+    "MVVC",
+    "MVC",
+    "AJAX",
+    "Linux",
+    "PHP",
+    "Design",
+    "UI",
+    "Python",
+    "C#",
+    "F#",
+    "distributed systems",
+    "multi-tier architectures",
+    "SAS",
+    "SSPS",
+    "Stata",
+    "MATLAB",
+    "Hbase",
+    "Hive",
+    "Pig",
+    "HQL",
+    "Oracle",
+    "SQL Server",
+    "Access",
+    "LDAP",
+    "SOAP interface",
+    "ReSTful interface",
+    
+
     "integration",
     "interactive",
     "realtime",
@@ -100,6 +129,6 @@ main = do
   putStrLn "--------"
   putStrLn $ concat $ intersperse "\n" $ sortRandom heads seedA
   putStrLn ""
-  putStrLn "Meat"
+  putStrLn "Searches"
   putStrLn "--------"
-  putStrLn $ concat $ intersperse "\n" $ sortRandom meat seedB
+  putStrLn $ concat $ intersperse "\n" $ sortRandom searches seedB
