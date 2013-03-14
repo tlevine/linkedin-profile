@@ -21,8 +21,8 @@ Version 2
 
 Version 3
 
+* Build quantitative MATLAB MySQL graph data visualization using semantic unsupervised social network integrity backend
+* Establish proprietary multi-tier architecture information graphic for cloud decision responsive database in SAS
 * Optimize geospatial statistical Oracle data-mining social media recommendation in Hadoop
 * Implement SQL Server supervised predictive cluster MapReduce interactive user experience (UX) to influence structured extensible object-oriented frontend Rails
-* Establish proprietary multi-tier architecture information graphic for cloud decision responsive database in SAS
-* Build quantitative MATLAB MySQL graph data visualization using semantic unsupervised social network integrity backend
 * Develop text-mining integration machine learning NoSQL validation opensource unstructured realtime mapping with distributed systems
