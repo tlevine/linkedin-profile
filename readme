@@ -1,4 +1,5 @@
-I want to see what happens if I create a meaning-void LinkedIn profile of buzzwords.
+First, I wanted to see what would happen if I created a meaning-void LinkedIn
+profile of buzzwords.
 
 Compile and run `big-data-scientist.hs`. It will give a list of meat words and
 fascia words. These lists will be in a random order. Use these lists to compose
@@ -14,3 +15,14 @@ a meaningless bulleted description of your past experience.
     current bullet at the first of the two meat words, and use the fascia word
     and the second of the meat words to start the next bullet.
 5. Repeat steps 2 to 4 until you have four bullets.
+
+Then, I realized that it might be sort of interesting to amass a large set of
+recruiter spam and to figure out what sort of things recruiters search for on
+LinkedIn, so now I'm just trying to get lots of recruiter spam.
+
+I can specify 50 "skills". What should they be
+
+* [Top 10 languages from GitHub](https://github.com/languages)
+* 
+
+Social media things might be most hilarious because they are such nonsense.
