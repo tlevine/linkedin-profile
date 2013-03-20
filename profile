@@ -16,3 +16,4 @@ Partner at Whitby Group
 * Build open-source unstructured Agile/Lean waterfall user interface for LEED-certified TDD/BDD/DDD validation
 * Minimize continuous integration to subsidize results-based financial instruments
 * Kickstart API mobile Redis app lean canvas NoSQL PostGIS to future-proof a multi-tier architecture 
+* Architect a Hadoop social Django on Rails 2.0 for LEED-certified enormous knowledge collection
